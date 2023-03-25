@@ -1,0 +1,39 @@
+body{
+    background: url('img/3.jpg');
+}
+p{
+    color: aliceblue;
+}
+.wrap{
+    width: 30%;
+    margin: auto;
+    background-color: rgb(143, 54, 54);
+    color: white;
+    border-radius: 10px;
+    font-family: comic sans ms;
+}
+
+.container{
+    padding: 60px;
+    margin: 10%;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    padding-bottom: 20px;   
+}
+
+table br{
+    padding: 20px;
+}
+
+button{
+    width: 90px;
+    font-family: comic sans ms;
+    height: 40px;
+    border-radius: 20px;
+}

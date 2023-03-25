@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+  </head>
+  <body bgcolor="#4C403D">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+      <h1>Formulir Pemesanan Pelanggan</h1>
+    </div>
+      <form>
+        <table>
+            <tr>
+              <td>
+                <label><b>Nama Lengkap</b></label>
+              </td>
+              <td><input type="text" id="nama_lengkap" name="nama"/></td>
+            </tr>
+            <tr>
+              <td>
+                <label><b>Umur</b></label>
+              </td>
+              <td>
+                <input type="text" id="umur" name="umur"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><b>Email </b></label>
+              </td>
+              <td><input type="email" id="email" name="email"/></td>
+            </tr>
+            <tr>
+                <td>
+                  <label for="Jenis Kelamin"><b>Jenis Kelamin </b></label>
+                </td>
+                <td>
+                  <select id="jenis_kelamin" name="jenis_kelamin">
+                    <option value="Laki-Laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                  </select>
+                </td>
+              </tr>
+            <tr>
+              <td>
+                <label><b>Pesanan </b></label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  id="Nugget"
+                  name="pesanan"
+                  value="Nugget Goreng"
+                />
+                <label>Nugget Goreng 10.000</label>
+                <input
+                  type="checkbox"
+                  id="Kentang"
+                  name="pesanan"
+                  value="Kentang Goreng"
+                />
+                <label>Kentang Goreng 10.000</label>
+                <input
+                  type="checkbox"
+                  id="Sosis"
+                  name="pesanan"
+                  value="Sosis Goreng"
+                />
+                <label>Sosis Goreng 12.000</label>
+                <input
+                  type="checkbox"
+                  id="Roti"
+                  name="pesanan"
+                  value="Roti Bakar"
+                />
+                <label>Roti Bakar 10.000</label>
+                <ul>
+                <input
+                  type="checkbox"
+                  id="kopi"
+                  name="pesanan"
+                  value="kopi Hitam"
+                />
+                <label>Kopi Hitam 7.000</label>
+                <input
+                  type="checkbox"
+                  id="Milo"
+                  name="pesanan"
+                  value="Milo Ice/Hot"
+                />
+                <label>Milo Ice/Hot 10.000</label>
+                <input
+                  type="checkbox"
+                  id="Capucino"
+                  name="pesanan"
+                  value="Capucino Ice/Hot"
+                />
+                <label>Capucino Ice/Hot 10.000</label>
+                <input type="checkbox" id="Lemon" name="pesanan" value="Lemontea Ice/Hot" />
+                <label>Lemontea Ice/Hot 15.000</label>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <label><b>Makan Di Tempat / Bawa Pulang </b></label>
+                </td>
+                <td>
+                  <input type="radio" id="Makan Di Tempat" name="MakanDiTempat/BawaPulang" value="Makan Di Tempat" />
+                  <label>Makan Di Tempat</label>
+                  <input type="radio" id="Bawa Pulang" name="MakanDiTempat/BawaPulang" value="Bawa Pulang" />
+                  <label>Bawa Pulang</label>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <label><b>Alamat </b></label>
+              </td>
+              <td>
+                <textarea id="alamat" name="alamat"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="reset"><b>Reset data ?</b></label>
+              </td>
+              <td><input type="Reset" value="ya" /></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="kirim" onclick="saveForm()">
+              </td>
+            </tr>
+        </table>
+      </form>
+      <div class="data">
+        <div id="hasil"></div>
+      </div>
+  </body>
+  <script src="js/form.js"></script>
+</html>
